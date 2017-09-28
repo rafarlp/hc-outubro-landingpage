@@ -1,0 +1,55 @@
+.btn {
+  position: relative;
+  border: 0;
+  border-radius: 25px;
+  padding: 13px 30px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: .7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 150ms ease-in-out,
+              box-shadow 150ms ease-in-out,
+              padding 250ms ease-in-out;
+
+  &.with-icon {
+
+    img {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      width: 20px;
+      top: 18px;
+      right: 30px;
+      transition: opacity 250ms ease-in,
+                  visibility 250ms ease-in;
+    }
+
+  }
+
+  &:hover {
+
+    &.with-icon {
+      padding-right: 65px;
+
+      img {
+        visibility: visible;
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  &.default {
+    background: linear-gradient(100grad, $hcBlue -20%, $hcGreen 120%);
+    box-shadow: 0 6px 20px 0 rgba(98,191,190,0.60);
+  }
+
+  &.green {
+    background-color: #71C274;
+  }
+
+}

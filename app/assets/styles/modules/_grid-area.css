@@ -1,0 +1,24 @@
+.landing-nav {
+  grid-area: nav;
+}
+main {
+  grid-area: content;
+}
+footer {
+  grid-area: footer;
+}
+.hero-title {
+  grid-area: hero;
+}
+.features {
+  grid-area: features;
+}
+.mobile {
+  grid-area: mobile;
+}
+.clients {
+  grid-area: clients;
+}
+.get-started {
+  grid-area: get-started;
+}

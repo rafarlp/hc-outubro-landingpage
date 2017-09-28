@@ -1,0 +1,88 @@
+.features {
+
+  .title {
+    color: #fff;
+    margin-bottom: 60px;
+    width: 50%;
+  }
+
+  h2 {
+
+    strong {
+      font-weight: 500;
+    }
+
+  }
+
+  .light-title {
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+
+  .laptop {
+    margin: 0 auto -50px;
+
+    @mixin atLarge {
+      width: 90%;
+    }
+
+  }
+
+  .info-text {
+    @mixin atLarge {
+      width: 74%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .features-table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 915px;
+    height: 700px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid rgba(98,192,190, 0.50);
+    margin: 0 auto;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.12);
+    overflow:hidden;
+
+    .feature-item {
+      display: flex;
+      flex-grow: 1;
+      width: 50%;
+      padding-left: 40px;
+      align-items: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(100,193,191,0.25);
+
+      &:nth-child(odd) {
+        border-right: 1px solid rgba(100,193,191,0.25);
+      }
+
+      &:nth-last-child(-n + 2) {
+        border-bottom: none;
+      }
+
+      .feature-icon {
+        width: 55px;
+        height: 64px;
+        margin-right: 15px;
+        background: url(/assets/images/icons/hexagon.svg) no-repeat;
+      }
+
+      span {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        line-height: 1.12rem;
+        font-weight: 500;
+        color: $hcBlue;
+        width: 70%;
+      }
+
+    }
+
+  }
+
+}

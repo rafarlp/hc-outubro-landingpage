@@ -1,0 +1,63 @@
+.hero-title {
+  background-color: #fff;
+
+  .promo-intro {
+    text-align: center;
+    z-index: 1;
+
+    h1, h2 {
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.7px;
+    }
+
+    h1 {
+      font-size: 5.12rem;
+      margin-bottom: -30px;
+    }
+
+    h2 {
+      font-size: 2.65rem;
+      margin-top: 20px;
+
+      .text-highlight {
+        display: inline-block;
+        font-size: 6.25rem;
+        font-weight: 700;
+        letter-spacing: -4px;
+        color: $hcBlue;
+      }
+
+      .align-left {
+        display: inline-block;
+        text-align: left;
+        line-height: 2.43rem;
+      }
+
+    }
+
+    .hero-shot {
+      margin: 0 auto;
+      margin-top: -80px;
+      max-width: 80%;
+    }
+
+    h3 {
+      margin: -30px auto 30px;
+      font-size: 2rem;
+      font-weight: 300;
+      color: $hcBlue;
+
+      @mixin atLarge {
+        max-width: 60%;
+      }
+
+      .text-highlight {
+        font-weight: 500;
+      }
+
+    }
+
+  }
+
+}

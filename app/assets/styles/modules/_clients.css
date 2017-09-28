@@ -1,0 +1,37 @@
+.clients {
+
+  .map {
+    width: 50%;
+    height: 100%;
+    background: url("../../assets/images/map-bg.jpg") no-repeat;
+    background-position: 0 7%;
+    background-size: cover;
+    top: 0;
+    right: 60%;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .client-carousel {
+    width: 590px;
+    height: 310px;
+    margin: 100px auto;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 100%);
+    box-shadow: 0 10px 20px 0 rgba(213,210,233,0.66);
+    border-radius: 5px;
+    text-align: center;
+
+    .client-logo {
+      display: inline-block;
+      margin-top: 110px;
+    }
+
+  }
+
+  .info-text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}

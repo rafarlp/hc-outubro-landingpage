@@ -1,0 +1,39 @@
+.wrapper, main, header, footer {
+  display: grid;
+}
+
+.wrapper {
+
+  @mixin atLarge {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     'nav'
+     'content'
+     'footer'
+  }
+
+}
+.container {
+
+  @mixin atLarge {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+main {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+   'hero'
+   'features'
+   'mobile'
+   'clients'
+   'get-started';
+
+   section {
+     position :relative;
+     padding-top: 80px;
+     padding-bottom: 80px;
+   }
+
+}

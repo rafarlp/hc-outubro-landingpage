@@ -1,0 +1,36 @@
+.gradient-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  transform-origin: -25%;
+  transform: skewY(-5deg);
+}
+.hero-title {
+
+  .gradient-bg {
+    z-index: 1;
+    background: linear-gradient(200grad, $gradientBlue 0%, $gradientGreen 130%);
+    transform-origin: -25%;
+    height: 750px;
+  }
+
+}
+.features {
+
+  .gradient-bg {
+    background: radial-gradient(circle, $hcGreen 0%, $hcBlue 130%);
+    height: 750px;
+  }
+
+}
+
+.clients {
+
+  .gradient-bg {
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, #fff 60%);
+    height: 300px;
+    transform: skewY(0);
+  }
+
+}

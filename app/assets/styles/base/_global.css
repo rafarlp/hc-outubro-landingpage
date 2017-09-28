@@ -1,0 +1,22 @@
+body {
+  font-family: 'Montserrat',  sans-serif;
+  font-weight: 400;
+  color: #4F5C7C;
+}
+
+h1, h2, h3, p, a {
+    font-weight: 400;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
