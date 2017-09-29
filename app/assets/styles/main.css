@@ -3,8 +3,9 @@
 @import "base/_global.css";
 @import "base/_mixins.css";
 @import "base/_variables.css";
+@import "modules/_animations.css";
+@import "modules/_revealFix.css";
 @import "modules/_layout.css";
-@import "modules/_grid-area.css";
 @import "modules/_buttons.css";
 @import "modules/_general.css";
 @import "modules/_gradient-bg.css";

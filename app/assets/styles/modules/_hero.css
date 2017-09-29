@@ -12,50 +12,131 @@
     }
 
     h1 {
-      font-size: 5.12rem;
-      margin-bottom: -30px;
+      font-size: 3.5rem;
+      margin-bottom: -40px;
+      line-height: 60px;
+      padding: 0 20px;
+
+      @mixin atMedium {
+        font-size: 5.12rem;
+        line-height: 85px;
+      }
+
+      @mixin atLarge {
+        padding: 0;
+      }
+
     }
 
     h2 {
-      font-size: 2.65rem;
-      margin-top: 20px;
+      font-size: 1.25rem;
+      margin-top: 50px;
+      padding: 0 10px;
+
+      @mixin atSmall {
+        margin-top: 40px;
+        font-size: 2rem;
+      }
+
+      @mixin atMedium {
+        margin-top: 40px;
+        font-size: 2.65rem;
+      }
+
+      @mixin atLarge {
+        padding: 0;
+      }
 
       .text-highlight {
         display: inline-block;
-        font-size: 6.25rem;
+        font-size: 4.5rem;
         font-weight: 700;
         letter-spacing: -4px;
         color: $hcBlue;
+
+        @mixin atMedium {
+          font-size: 6.25rem;
+        }
+
       }
 
       .align-left {
         display: inline-block;
         text-align: left;
-        line-height: 2.43rem;
+        line-height: 1.25rem;
+        width: 35%;
+        margin-left: 10px;
+
+        @mixin atSmall {
+          line-height: 1.8rem;
+          width: auto;
+        }
+
+        @mixin atMedium {
+          line-height: 2.43rem;
+        }
+
       }
 
     }
 
     .hero-shot {
+      height: 300px;
       margin: 0 auto;
-      margin-top: -80px;
-      max-width: 80%;
+      margin-top: -50px;
+      overflow: hidden;
+      text-align: center;
+
+      img {
+        width: 200%;
+        max-width: none;
+        margin-left: -10%;
+
+        @mixin atSmall {
+          max-width: 100%;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      @mixin atSmall {
+        height: 100%;
+        max-width: 80%;
+        margin-top: -80px;
+        overflow: visible;
+      }
+
+      @mixin atSmall {
+        margin-top: -40px;
+      }
+
     }
 
     h3 {
-      margin: -30px auto 30px;
-      font-size: 2rem;
+      margin: 30px auto 30px;
+      font-size: 1.8rem;
       font-weight: 300;
       color: $hcBlue;
+      padding: 0 15px;
 
-      @mixin atLarge {
+      @mixin atSmall {
+        margin-top: 0px;
         max-width: 60%;
+      }
+
+      @mixin atMedium {
+        margin-top: -30px;
       }
 
       .text-highlight {
         font-weight: 500;
       }
 
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
     }
 
   }

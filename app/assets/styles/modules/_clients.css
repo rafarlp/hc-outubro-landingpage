@@ -1,37 +1,63 @@
 .clients {
-
+  
   .map {
-    width: 50%;
-    height: 100%;
-    background: url("../../assets/images/map-bg.jpg") no-repeat;
-    background-position: 0 7%;
-    background-size: cover;
-    top: 0;
-    right: 60%;
-    position: absolute;
+    position: relative;
     z-index: -2;
+    width: 100%;
+    opacity: .5;
+
+    @mixin atLarge {
+      opacity: 1;
+    }
+
+    &:before {
+      content: "";
+      background: url(../../assets/images/map-bg.jpg) no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 200%;
+      height: 1000px;
+      top: -100px;
+      left: -20%;
+      display: block;
+    }
   }
 
   .client-carousel {
-    width: 590px;
-    height: 310px;
     margin: 100px auto;
+    height: 310px;
     background-image: linear-gradient(-180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.85) 100%);
     box-shadow: 0 10px 20px 0 rgba(213,210,233,0.66);
     border-radius: 5px;
     text-align: center;
 
+    @mixin atMedium {
+      width: 590px;
+    }
+
     .client-logo {
       display: inline-block;
-      margin-top: 110px;
+      margin-top: 120px;
+      max-width: 80%;
+
+      @mixin atMedium {
+        margin-top: 110px;
+        max-width: 100%;
+      }
+
     }
 
   }
 
   .info-text {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
+
+    @mixin atMedium {
+      width: 70%;
+    }
+
   }
 
 }

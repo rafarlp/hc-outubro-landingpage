@@ -1,60 +1,78 @@
 .landing-nav {
- position: absolute;
- z-index: 2;
- top: 0;
- right: 0;
- left: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 
- .container {
+  .container {
    position: relative;
    width: 100%;
- }
+   padding: 0;
+  }
 
- .logo, nav {
-    display: inline-block;
-    position: absolute;
- }
+  .logo, nav {
+    display: block;
 
- .logo{
-  left: 0;
-  margin-left: -20px;
-  margin-top: 30px;
-  width: 200px;
- }
-
- nav {
-  right: 0;
-  margin-top: 30px;
-
-   .try-it {
-    background: rgba(0,74,114,0.20);
-    border-radius: 25px;
-    padding: 10px 5px 10px 25px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.75rem;
-    letter-spacing: 1.5px;
-
-    .pill {
-      display: inline-block;
-      background: #71C274;
-      border-radius: 25px;
-      margin-left: 5px;
-      padding: 5px 15px;
-      font-size: 0.81rem;
-      font-weight: 500;
-      letter-spacing: 1.8px;
-      transition: 200ms box-shadow ease-in-out;
-
-      &:hover {
-        box-shadow: 0 0 5px 10px rgba(113,194,116,0.50);
-      }
-
+    @mixin atLarge {
+      position: absolute;
     }
+  }
+
+  .logo{
+    left: 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 10px;
+
+    @mixin atLarge {
+      margin-left: -20px;
+    }
+
+  }
+
+  nav {
+    right: 0;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+
+    @mixin atSmall {
+      display: block;
+    }
+
+     .try-it {
+      background: rgba(0,74,114,0.20);
+      border-radius: 25px;
+      padding: 10px 5px 10px 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+
+      .pill {
+        display: inline-block;
+        background: #71C274;
+        border-radius: 25px;
+        margin-left: 5px;
+        padding: 5px 15px;
+        font-size: 0.81rem;
+        font-weight: 500;
+        letter-spacing: 1.8px;
+        transition: 200ms box-shadow ease-in-out;
+
+
+        &:hover {
+          box-shadow: 0 0 5px 10px rgba(113,194,116,0.50);
+        }
+
+      }
 
    }
 
- }
+  }
 
 }

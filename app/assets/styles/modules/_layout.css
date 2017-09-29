@@ -1,39 +1,23 @@
-.wrapper, main, header, footer {
-  display: grid;
-}
-
-.wrapper {
-
-  @mixin atLarge {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-     'nav'
-     'content'
-     'footer'
-  }
-
-}
 .container {
+  perspective: 1600px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @mixin atLarge {
-    max-width: 1200px;
-    margin: 0 auto;
+  &--small {
+    padding-left: 0;
+    padding-right: 0;
   }
 
 }
 main {
-  grid-template-columns: 1fr;
-  grid-template-areas:
-   'hero'
-   'features'
-   'mobile'
-   'clients'
-   'get-started';
-
    section {
      position :relative;
      padding-top: 80px;
      padding-bottom: 80px;
+     overflow: hidden;
    }
 
 }

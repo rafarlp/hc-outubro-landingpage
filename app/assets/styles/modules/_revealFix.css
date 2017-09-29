@@ -1,0 +1,3 @@
+.sr h1, .sr h2, .sr h3, .sr button, .sr .hero-shot, .sr .client-carousel, .sr .contact-form, .sr nav, .sr .logo, .sr .phone, .sr .feature-table, .sr .feature-item, .sr .info-text p {
+  visibility: hidden;
+}
