@@ -20,3 +20,47 @@ img {
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: $hcBlue;
+  margin: 0 auto 20px;
+
+  @mixin atSmall {
+    font-size: 2.4rem;
+  }
+
+  @mixin atMedium {
+    font-size: 2.5rem;
+  }
+
+}
+
+.info-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+
+  @mixin atMedium {
+    font-size: 1.5rem;
+  }
+
+}
+
+.light-title {
+  margin-top: 0px;
+  font-size: 1.45rem;
+  font-weight: 300;
+  line-height: 34px;
+  color: $lightBlue;
+  display: block;
+  text-align: center;
+
+  @mixin atSmall {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+}

@@ -11,7 +11,6 @@
     @mixin atLarge {
       width: 50%;
     }
-
   }
 
   h2 {
@@ -29,7 +28,6 @@
 
   .laptop {
     margin: 0 auto 0px;
-    width: 90%;
 
     @mixin atSmall {
       margin-bottom: -25px;
@@ -95,9 +93,8 @@
 
       .feature-icon {
         width: 55px;
-        height: 64px;
+        height: 64px;  background: url(/assets/images/icons/hexagon.svg) no-repeat;
         margin-right: 15px;
-        background: url(/assets/images/icons/hexagon.svg) no-repeat;
         display: none;
 
         @mixin atSmall {

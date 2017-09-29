@@ -7,12 +7,7 @@
   <meta name="keywords" content="tecnologia, sistema de gerenciamenot, sistema para anestesistas, sistema para anestesiologistas, sistema para cirurgiões, anestesista,  anestesiologista, cirugião, faturamento de anestesista, faturamento de anestesiologista, faturamento de cirurgião, glosas de convênio, glosas, como reduzir glosas">
   <meta name="description" content="Ganhe 50% de desconto em sua mensalidade assinando o SIGM - Sistema de Informação e Gerenciamento Médico, no mês de Outubro.">
   <link rel="stylesheet" href="temp/styles/main.css">
-  <script type="text/javascript">
-    window.sr = ScrollReveal();
-    if (sr.isSupported()) {
-      document.documentElement.classList.add('sr');
-    }
-  </script>
+  <script src="/temp/scripts/vendor.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -50,17 +45,17 @@
               <span class="align-left">de desconto<br>em sua mensalidade</span>
             </h2>
 
-            <div class="hero-shot">
+            <div class="hero-shot lazy-container">
               <picture>
-                <source srcset="assets/images/devices/hero-shot.png 1700w" media="(min-width: 990px)">
-                <img srcset="assets/images/devices/hero-shot@0,75x.png 1380w" class="hero-image">
+                <source data-srcset="assets/images/devices/hero-shot.png 1700w" media="(min-width: 990px)">
+                <img data-srcset="assets/images/devices/hero-shot@0,75x.png 1380w" class="hero-image lazyload">
               </picture>
             </div>
 
             <h3>Contrate o SIGM no Mês de Outubro e ganhe <span class="text-highlight">50% de desconto em sua mensalidade.</span></h3>
 
             <a href="#get-started" class="btn with-icon default">
-              <img src="assets/images/icons/arrow-right.svg" class="icon arrow-right">
+              <img data-src="assets/images/icons/arrow-right.svg" class="icon arrow-right lazyload">
               Quero contratar
             </a>
 
@@ -80,20 +75,20 @@
             Uma solução completa para <strong>Clínicas, Grupos Médicos e Médicos individuais.</strong>
           </h2>
 
-          <div class="laptop">
+          <div class="laptop lazy-container">
             <picture>
-              <source srcset="assets/images/devices/laptop.png 1700w" media="(min-width: 1380px)">
-              <source srcset="assets/images/devices/laptop@0,75x.png 1380w" media="(min-width: 990px)">
-              <source srcset="assets/images/devices/laptop@0,5x.png 990w" media="(min-width: 640px)">
-              <img srcset="assets/images/devices/laptop@0,3x.png 640w" class="hero-image">
+              <source data-srcset="assets/images/devices/laptop.png 1700w" media="(min-width: 1380px)">
+              <source data-srcset="assets/images/devices/laptop@0,75x.png 1380w" media="(min-width: 990px)">
+              <source data-srcset="assets/images/devices/laptop@0,5x.png 990w" media="(min-width: 640px)">
+              <img data-srcset="assets/images/devices/laptop@0,3x.png 640w" class="hero-image lazyload">
             </picture>
           </div>
 
           <h2>Porque escolher a <strong>Health Chess</strong>?</h2>
 
-          <p class="info-text">
-            Nossos sistemas foram feitos por médicos, para médicos. Conhecemos a fundo as dores e problemas encontrados no dia-a-dia da profissão. Nossa missão é criar soluções que facilitem o seu trabalho, automatizando e otimizando seus processos e tarefas diárias,  aumentando assim a eficiência de sua Clínica, Consultório ou Grupo Médico.
-          </p>
+          <div class="info-text">
+            <p>Nossos sistemas foram feitos por médicos, para médicos. Conhecemos a fundo as dores e problemas encontrados no dia-a-dia da profissão. Nossa missão é criar soluções que facilitem o seu trabalho, automatizando e otimizando seus processos e tarefas diárias,  aumentando assim a eficiência de sua Clínica, Consultório ou Grupo Médico.</p>
+          </div>
 
           <h3 class="light-title">Ganhe eficiência e aumente sua lucratividade com ajuda do SIGM.</h3>
 
@@ -179,10 +174,10 @@
 
           <div class="phone">
             <picture>
-              <source srcset="assets/images/devices/phone@2x.png 1700w" media="(min-width: 1380px)">
-              <source srcset="assets/images/devices/phone@1x.png 1380w" media="(min-width: 990px)">
-              <source srcset="assets/images/devices/phone@0,75x.png 990w" media="(min-width: 640px)">
-              <img srcset="assets/images/devices/phone@0,5x.png 640w" class="hero-image">
+              <source data-srcset="assets/images/devices/phone@2x.png 1700w" media="(min-width: 1380px)">
+              <source data-srcset="assets/images/devices/phone@1x.png 1380w" media="(min-width: 990px)">
+              <source data-srcset="assets/images/devices/phone@0,75x.png 990w" media="(min-width: 640px)">
+              <img data-srcset="assets/images/devices/phone@0,5x.png 640w" class="hero-image lazyload">
             </picture>
           </div>
 
@@ -192,7 +187,7 @@
 
       <section class="clients">
 
-        <div class="map"></div>
+        <div class="map lazyload"></div>
 
         <div class="gradient-bg"></div>
 
@@ -203,7 +198,7 @@
 
           <div class="client-carousel owl-carousel">
             <div class="client-logo">
-              <img src="assets/images/clients/sma.png" alt="SMA - Serviços Médicos de Anestesia">
+              <img data-src="assets/images/clients/sma.png" class="lazyload" alt="SMA - Serviços Médicos de Anestesia">
             </div>
           </div>
 
@@ -223,14 +218,15 @@
 
           <h3 class="light-title">Solicite uma demonstração do sistema<br>e entraremos em contato com você em breve!</h3>
 
-          <form class="" action="email-contact.php" method="post">
+          <form class="" action="http://localhost/mailserver/mail.php" method="POST">
             <div class="contact-form">
-              <input type="text" placeholder="Seu nome" name="name" value="">
-              <input type="text" name="name" placeholder="Grupo Médico, Clínica ou consultório (se houver)" value="">
-              <input type="text" name="name" placeholder="Telefone" value="">
-              <input type="text" name="name" placeholder="Cidade" value="">
-              <input type="text" name="name" placeholder="Estado" value="">
-              <textarea name="name" placeholder="Conte mais sobre suas necessidades e suas dúvidas…" value=""></textarea>
+              <input type="text" placeholder="Seu nome" name="nome" value="">
+              <input type="email" name="email" placeholder="Email de contato" value="">
+              <input type="text" name="grupo" placeholder="Grupo Médico, Clínica ou consultório (se houver)" value="">
+              <input type="phone" name="telefone" placeholder="Telefone" value="">
+              <input type="text" name="cidade" placeholder="Cidade" value="">
+              <input type="text" name="estado" placeholder="Estado" value="">
+              <textarea name="mensagem" placeholder="Conte mais sobre suas necessidades e suas dúvidas…" value=""></textarea>
               <input type="submit" name="submit" value="Solicitar Contato">
             </div>
           </form>

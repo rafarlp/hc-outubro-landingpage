@@ -1,3 +1,23 @@
-.sr h1, .sr h2, .sr h3, .sr button, .sr .hero-shot, .sr .client-carousel, .sr .contact-form, .sr nav, .sr .logo, .sr .phone, .sr .feature-table, .sr .feature-item, .sr .info-text p {
+.sr h1, .sr h2, .sr h3, .sr .promo-intro, .sr button, .sr .hero-shot, .sr .client-carousel, .sr .contact-form, .sr nav, .sr .laptop, .sr .logo, .sr .laptop, .sr .phone, .sr .feature-item, .sr .info-text p {
   visibility: hidden;
+}
+.lazy-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  &.hero-shot {
+    padding-bottom: 66.55%;
+  }
+
+  &.laptop {
+    padding-bottom: 68.42%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
