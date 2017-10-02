@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Source+Sans+Pro:400,600" rel="stylesheet">
   <title>Promoção de Outubro - Ganhe 50% de desconto em sua mensalidade - Health Chess</title>
   <meta name="keywords" content="tecnologia, sistema de gerenciamenot, sistema para anestesistas, sistema para anestesiologistas, sistema para cirurgiões, anestesista,  anestesiologista, cirugião, faturamento de anestesista, faturamento de anestesiologista, faturamento de cirurgião, glosas de convênio, glosas, como reduzir glosas">
@@ -202,9 +202,42 @@
           <h2>Você está em boa companhia.</h2>
           <h3 class="light-title">Junte-se à mais de 90 grupos médicos e profissionais<br>que confiam na Health Chess para ajudar os seus negócios.</h3>
 
-          <div class="client-carousel owl-carousel">
+          <div class="client-carousel owl-carousel owl-theme">
             <div class="client-logo">
               <img data-src="assets/images/clients/sma.png" class="lazyload" alt="SMA - Serviços Médicos de Anestesia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/amd.png" class="lazyload" alt="AMD - Anestesia, Monitorização e Dor">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/asatech.png" class="lazyload" alt="Asatech - Serviços Médicos de Anestesia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/baiasul.png" class="lazyload" alt="Hospital Baía Sul">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/carp.png" class="lazyload" alt="CARP - Centro de Anestesiologia de Ribeirão Preto">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/uroclinica.png" class="lazyload" alt="SMA - Serviços Médicos de Anestesia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/jk.png" class="lazyload" alt="JK Anestesiologia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/copan.png" class="lazyload" alt="COPAN - Cooperativa Paranaense de Anestesiologia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/coopanestba.png" class="lazyload" alt="Cooperativa de Anestesiologia da Bahia">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/coopanestsjrp.png" class="lazyload" alt="Cooperativa de Anestesiologia de São José do Rio Preto">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/coopanestsc.png" class="lazyload" alt="Cooperativa de Anestesiologia de Santa Catarina">
+            </div>
+            <div class="client-logo">
+              <img data-src="assets/images/clients/coopanesttm.png" class="lazyload" alt="Cooperativa de Anestesiologia do Triângulo Mineiro">
             </div>
           </div>
 
@@ -224,18 +257,20 @@
 
           <h3 class="light-title">Solicite uma demonstração do sistema<br>e entraremos em contato com você em breve!</h3>
 
-          <form class="" action="http://localhost/mailserver/mail.php" method="POST">
+          <form id="contact-form" action="/contato/handler.php" method="POST">
             <div class="contact-form">
               <input type="text" placeholder="Seu nome" name="nome" value="">
               <input type="email" name="email" placeholder="Email de contato" value="">
               <input type="text" name="grupo" placeholder="Grupo Médico, Clínica ou consultório (se houver)" value="">
-              <input type="phone" name="telefone" placeholder="Telefone" value="">
+              <input type="text" class="phonemask" name="telefone" placeholder="Telefone" value="">
               <input type="text" name="cidade" placeholder="Cidade" value="">
               <input type="text" name="estado" placeholder="Estado" value="">
               <textarea name="mensagem" placeholder="Conte mais sobre suas necessidades e suas dúvidas…" value=""></textarea>
               <input type="submit" name="submit" value="Solicitar Contato">
             </div>
           </form>
+
+          <div class="form-messages"></div>
 
         </div>
 
@@ -249,6 +284,17 @@
     </footer>
 
   </div>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86300879-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-86300879-3');
+  </script>
+
   <!-- build:js /assets/scripts/app.js -->
   <script src="/temp/scripts/app.js"></script>
   <!-- endbuild -->

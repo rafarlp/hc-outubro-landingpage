@@ -3942,20 +3942,8 @@ main section {
   letter-spacing: .7px;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: padding 250ms ease-in-out,
-              -webkit-transform 150ms ease-in-out,
-              -webkit-box-shadow 150ms ease-in-out;
-  transition: padding 250ms ease-in-out,
-              -webkit-transform 150ms ease-in-out,
-              -webkit-box-shadow 150ms ease-in-out;
-  transition: transform 150ms ease-in-out,
-              box-shadow 150ms ease-in-out,
-              padding 250ms ease-in-out;
-  transition: transform 150ms ease-in-out,
-              box-shadow 150ms ease-in-out,
-              padding 250ms ease-in-out,
-              -webkit-transform 150ms ease-in-out,
-              -webkit-box-shadow 150ms ease-in-out;
+  -webkit-transition: padding-right 250ms ease-in-out !important;
+  transition: padding-right 250ms ease-in-out !important;
 
 }
 
@@ -3967,9 +3955,9 @@ main section {
       top: 15px;
       right: 30px;
       -webkit-transition: opacity 250ms ease-in,
-                  visibility 250ms ease-in;
+                  visibility 250ms ease-in !important;
       transition: opacity 250ms ease-in,
-                  visibility 250ms ease-in;
+                  visibility 250ms ease-in !important;
     }
 
 .btn:hover.with-icon {
@@ -4293,9 +4281,9 @@ main section {
   }
 
 .hero-title .promo-intro .hero-shot img {
-        width: 200%;
+        width: 150%;
         max-width: none;
-        margin-left: -10%;
+        margin-left: -20%;
       }
 
 @media (min-width: 530px) {
@@ -4303,7 +4291,15 @@ main section {
 .hero-title .promo-intro .hero-shot img {
           max-width: 100%;
           width: 100%;
-          margin-left: 0
+          margin-left: 0;
+          margin-top: -20px
+      }
+  }
+
+@media (min-width: 800px) {
+
+.hero-title .promo-intro .hero-shot img {
+          margin-top: -40px
       }
   }
 
@@ -4568,7 +4564,6 @@ main section {
 
 .mobile .info-text {
     text-align: center;
-    margin: 0 20px;
   }
 
 @media (min-width: 800px) {
@@ -4655,20 +4650,18 @@ main section {
   }
 
 .clients .client-carousel .client-logo {
-      display: inline-block;
-      margin-top: 120px;
-      max-width: 80%;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-top: 50px;
 
     }
 
-@media (min-width: 800px) {
-
-.clients .client-carousel .client-logo {
-        margin-top: 110px;
-        max-width: 100%
-
-    }
-  }
+.clients .client-carousel .client-logo img {
+        width: 400px;
+        text-align: center;
+        display: inline-block;
+      }
 
 .clients .info-text {
     width: 85%;
@@ -4683,6 +4676,10 @@ main section {
       width: 70%
 
   }
+  }
+
+.clients .owl-dots {
+    margin-top: -10px !important;
   }
 
 .get-started {
@@ -4739,6 +4736,10 @@ main section {
     }
 
 .get-started .contact-form input[type="submit"] {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
         background-color: #71C274;
         color: #fff;
         -webkit-transition: 200ms background ease-in-out;
@@ -4759,4 +4760,51 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: #0696E6;
+
 }
+
+.form-messages {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 25px 0 #9ef1ef;
+          box-shadow: 0 10px 25px 0 #9ef1ef;
+  -webkit-transition: height 200ms ease-in-out,
+              width 200ms ease-in-out,
+              background 200ms ease-in-out,
+              visibility 200ms ease-in-out,
+              opacity 200ms ease-in-out !important;
+  transition: height 200ms ease-in-out,
+              width 200ms ease-in-out,
+              background 200ms ease-in-out,
+              visibility 200ms ease-in-out,
+              opacity 200ms ease-in-out !important;
+
+}
+
+@media (min-width: 800px) {
+
+.form-messages {
+    width: 560px;
+    margin: 20px auto 0
+
+}
+  }
+
+.form-messages.visible {
+    visibility: visible;
+    opacity: 1;
+    background: #62bfbe;
+  }
+
+.form-messages.success {
+    background: #71c274;
+  }
+
+.form-messages.error {
+    background: #ff464e;
+  }

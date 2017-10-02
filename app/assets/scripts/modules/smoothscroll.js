@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 class SmoothScroll {
   constructor() {
 

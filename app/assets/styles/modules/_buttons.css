@@ -10,9 +10,7 @@
   letter-spacing: .7px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 150ms ease-in-out,
-              box-shadow 150ms ease-in-out,
-              padding 250ms ease-in-out;
+  transition: padding-right 250ms ease-in-out !important;
 
   &.with-icon {
 
@@ -24,7 +22,7 @@
       top: 15px;
       right: 30px;
       transition: opacity 250ms ease-in,
-                  visibility 250ms ease-in;
+                  visibility 250ms ease-in !important;
     }
 
   }

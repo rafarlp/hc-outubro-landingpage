@@ -36,6 +36,10 @@
       border-bottom: 1px solid rgba(113,194,116,0.25);
 
       &[type="submit"] {
+        font-family: Montserrat, sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
         background-color: #71C274;
         color: #fff;
         transition: 200ms background ease-in-out;

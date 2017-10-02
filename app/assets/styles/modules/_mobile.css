@@ -50,7 +50,6 @@
 
   .info-text {
     text-align: center;
-    margin: 0 20px;
 
     @mixin atMedium {
       margin-left: 10%;

@@ -30,6 +30,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.13",
+    "css-loader": "^0.28.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
@@ -39,10 +40,15 @@
     "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.28",
     "gulp-watch": "^4.3.11",
+    "jquery-mask-plugin": "^1.14.11",
+    "jquery.maskedinput": "^1.4.1",
+    "meiomask": "^1.1.5",
     "postcss-import": "^11.0.0",
     "postcss-mixins": "^6.1.0",
     "postcss-nested": "^2.1.2",
     "postcss-simple-vars": "^4.1.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.6.0"
   }
 }

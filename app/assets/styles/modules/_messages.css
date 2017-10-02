@@ -1,0 +1,35 @@
+.form-messages {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px 0 #9ef1ef;
+  transition: height 200ms ease-in-out,
+              width 200ms ease-in-out,
+              background 200ms ease-in-out,
+              visibility 200ms ease-in-out,
+              opacity 200ms ease-in-out !important;
+
+  @mixin atMedium {
+    width: 560px;
+    margin: 20px auto 0;
+  }
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+    background: #62bfbe;
+  }
+
+  &.success {
+    background: #71c274;
+  }
+
+  &.error {
+    background: #ff464e;
+  }
+
+}
